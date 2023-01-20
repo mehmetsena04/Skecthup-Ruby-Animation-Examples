@@ -1,3 +1,4 @@
+
 mod = Sketchup.active_model # Open model
 ent = mod.entities # All entities in model
 sel = mod.selection # Current selection
@@ -24,7 +25,7 @@ deger =0
     orjin1 = Geom::Point3d.new(1, 1, yk2.cm)
     orjin2 = Geom::Point3d.new(1, 1, yk.cm)
     cember1 = group.entities.add_circle(orjin1, Z_AXIS, (200-deger).cm, 6)
-  #Baslangýc,Boyut,Yarýcap,Kacge7
+  #BaslangÃ½c,Boyut,YarÃ½cap,Kacge7
     cember2 = group.entities.add_circle(orjin2, Z_AXIS, (200-deger).cm, 6)
     face = group.entities.add_face(cember1)
     path = group.entities.add_edges(orjin2,orjin2)
